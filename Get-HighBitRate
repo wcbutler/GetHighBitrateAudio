@@ -47,5 +47,5 @@ ForEach($audioType in $audioTypes) {
     }
     }
     #this will display the collection to the screen. If you want to export to csv, pipe to export-csv 
-    $collection 
+    $collection | out-gridview
 }

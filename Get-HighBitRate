@@ -1,5 +1,5 @@
 #forked with permission from https://github.com/skexie/PowerShell-Scripts/blob/e16f33bf5bd7f3c72495c877ef579b2cf1e8fb05/Get-HighBitRate.ps1 on 1/28/2023
-#if not -fileExt is called then it looks for all HQ audio formats
+#if -fileExt is not called with the function then it looks for all HQ audio formats seen below
 
 function Get-HighBitRate([string]$folder=".",[int]$minBitrate=1144,[switch]$details=$true, $fileExt=@('*.wav','*.flac','*.aiff','*.pcm','*.wma','*.m4a','*.alac','*.mqa')) { 
 $shellObject=New-Object -ComObject Shell.Application
